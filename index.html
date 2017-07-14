@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loan Application Form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="validation.css">
+	</head>
+
+	<body>
+		<h1>Loan Application Form</h1>
+		<br>
+		<form action="" method="post">
+			<div>
+				<fieldset>
+					<legend>Applicant Information</legend>
+						<label for="fname">First Name:</label>
+						<input type="text" id="fname" name="user_first_name">
+						<label for="mname">Middle Initial:</label>
+						<input type="text" id="mname" name="user_middle_name">
+						<label for="fname">Last Name:</label>
+						<input type="text" id="fname" name="user_last_name">
+						<br>
+						<label for="address">Address:</label>
+						<input type="text" id="address" name="user_address">
+						<label for="telnumber">Telephone Number:</label>
+						<input type="tel" id="telnumber" name="user_phone_number">
+						<br>
+						<label for="mail">E-mail:</label>
+						<input type="email" id="mail" name="user_email">
+						<label for="site">LinkedIn URL:</label>
+						<input type="url" id="site" name="user_url">
+				</fieldset>
+				<br>
+
+				<!-- Employer Info here -->
+				<fieldset>
+					<legend>Employer Information</legend>
+					<label for="occupation">Occupation:</label>
+					<input type="text" id="occupation" name="user_occupation">
+					<br>
+					<label for="employer">Employer:</label>
+					<input type="text" id="employer" name="user_employer">
+					<br>
+					<label for="employer_address">Employer Address:</label>
+					<input type="text" id="employer_address" name="User_employer_address">
+				</fieldset>
+				<br>
+				<!-- Fancy form buttons here-->
+
+				<fieldset>
+					<legend>Loan Information</legend>
+					<select name="loan_type">
+						<option value="loan_option" selected>Select loan type</option>
+  						<option value="commercial">Commercial</option>
+  						<option value="real_estate">Real estate</option>
+  						<option value="personal">Personal</option>
+  						<option value="mortgage">Mortgage</option>
+					</select>
+					<br>
+					<br>
+					<label for="amount">Loan amount requesting:</label>
+						<input type="text" id="amount" name="user_loan_amount">
+					<br>
+					<p>Loan Length: </p>
+					5 Years<input type="radio" name="length" value="5yrs" checked> 
+					15 Years<input type="radio" name="length" value="15yrs"> 
+					30 Years<input type="radio" name="length" value="30yrs">
+					<br>
+					<p>Special Conditions:</p>
+					I have a down payment<input type="checkbox" name="condition" value="down_payment"> 
+					Out-of-state resident<input type="checkbox" name="condition" value="out_of_state"> 
+					Married<input type="checkbox" name="condition" value="married">
+					Loan will be co-signed<input type="checkbox" name="condition" value="co_signed"> 
+				<br>
+				<br>
+				<!-- Add text area for comments -->
+			
+				<p>Additional Comments:</p>
+				<textarea id="msg" name="user_message"></textarea>
+				</fieldset>
+				<br>
+
+				<!-- Add submit button! -->
+				<div class="button">
+  					<button type="submit">Submit Application</button>
+				</div>
+
+			</div>
+		</form>
+
+	</body>
+</html>
